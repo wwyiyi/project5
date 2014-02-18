@@ -1,0 +1,143 @@
+Script started on Mon 17 Feb 2014 05:53:47 PM CST
+]0;eve@ubuntu: ~/rails_projects/sample_appeve@ubuntu:~/rails_projects/sample_app$ ""[K[Krails console
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > ""
+ => "" 
+2.0.0-p353 :002 > ""f"p"p"[1P"[1P"o"o"
+ => "foo" 
+2.0.0-p353 :003 > ""f"o"o" "[1P"[C + ""b"a"r"
+ => "foobar" 
+2.0.0-p353 :004 > gir[K[K[Kfirst_name = ""M"i"h"[1P"c"h"a"e"l"
+ => "Michael" 
+2.0.0-p353 :005 > last_name = ""H"a"r"t"l"
+ => "Hartl" 
+2.0.0-p353 :006 > first_m[Kname + +[K"" [K[K " + last_name
+ => "Michael Hartl" 
+2.0.0-p353 :007 > ""#"{"}"f}"i}"r}"s}"t}"_}"n}"a}"m}"e}"[C "#"{"}"l}"a}"s}"t}"_}"n}"a}"m}"e}"[C[C
+ => "Michael Hartl" 
+2.0.0-p353 :008 > puts ""f"o"o"
+foo
+ => nil 
+2.0.0-p353 :009 > put[K[K[Kprint f[K""f"o"o"
+foo => nil 
+2.0.0-p353 :010 > print """[Kf"o"o"\"n"
+foo
+ => nil 
+2.0.0-p353 :011 > ''f'o'o'
+ => "foo" 
+2.0.0-p353 :012 > ''f'o'o'[C + ''b'a'r'
+ => "foobar" 
+2.0.0-p353 :013 > ''#'{'}'f}'o}'o}'[C 'b'a'r'
+ => "\#{foo} bar" 
+2.0.0-p353 :014 > ''\'n'
+ => "\\n" 
+2.0.0-p353 :015 > 'Newlines (\n) and tabs (\t) both use the backslash character  \.'
+ => "Newlines (\\n) and tabs (\\t) both use the backslash character \\." 
+2.0.0-p353 :016 > ""f"o"o"b"a"r"[C.length
+ => 6 
+2.0.0-p353 :017 > ""g"[1P"f"o"o"b"a"r"[C.empty:[K?
+ => false 
+2.0.0-p353 :018 > ""/[K.empty?
+ => true 
+2.0.0-p353 :019 > s = ""f"o"o"t"n"[1P"[1P"b"a"r"
+ => "foobar" 
+2.0.0-p353 :020 > is [K[K[Kif s.empty?
+2.0.0-p353 :021?>   ""t"[1P"T"h"e" "s"t"r"i"n"g" "i"s" "e"m"p"t"y"[C
+2.0.0-p353 :022?>   else
+2.0.0-p353 :023 >     ""T"h"e" "s"t"r"i"n"g" "i"s" "n"o"n"e"m"p"t"y"
+2.0.0-p353 :024?>   end
+ => "The string is nonempty" 
+2.0.0-p353 :025 > x = ""f"o"o"
+ => "foo" 
+2.0.0-p353 :026 > y = ""
+ => "" 
+2.0.0-p353 :027 > puts ""B"o"t"h" "s"t"r"i"n"g"s" "a"r"e" "e"m"p"t"y"[C is[Kd[Kf x.empty?&&y.empty?
+ => nil 
+2.0.0-p353 :028 > puts ""O"n"e" "o"f" "t"h"e" "s"r"[1P"t"r"i"n"g" "i"s" "e"m"p"t"y"[C if x.empty || y.[K[K[K[K[K[K? || y.empty?
+One of the string is empty
+ => nil 
+2.0.0-p353 :029 > pus[Kts ""x" "i"s" "n"o"t" "e"m"p"t"y"[C if !.x[K[Kexi[K[K[K x.i[Kempty?
+x is not empty
+ => nil 
+2.0.0-p353 :030 > nil.to_s
+ => "" 
+2.0.0-p353 :031 > nil.empty?
+NoMethodError: undefined method `empty?' for nil:NilClass
+	from (irb):31
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :032 > nil.to_s.empty?
+ => true 
+2.0.0-p353 :033 > ""f"o"o"[C.nil?
+ => false 
+2.0.0-p353 :034 > "".nil?
+ => false 
+2.0.0-p353 :035 > nil.nil?
+ => true 
+2.0.0-p353 :036 > p[Kputs ""x" "i"s" "n"o"t" "e"m"p"t"y"[C if !x.empty?
+x is not empty
+ => nil 
+2.0.0-p353 :037 > string = ""f"p"[1P"o"o"b"a"r"
+ => "foobar" 
+2.0.0-p353 :038 > puts ""T"h"e" "S"[1P"s"t"r"i"n"g" "'"'"#'"{'"}'"s}'"t}'"r}'"i}'"n}'"g}'"[C[C "i"s" "n"o"n"e"m"p"t"y"."[C unless string.empty <[K?
+The string 'foobar' is nonempty.
+ => nil 
+2.0.0-p353 :039 > if nil
+2.0.0-p353 :040?>   true
+2.0.0-p353 :041?>   else
+2.0.0-p353 :042 >      [Kfalse
+2.0.0-p353 :043?>   end
+ => false 
+2.0.0-p353 :044 > if 0
+2.0.0-p353 :045?>   true
+2.0.0-p353 :046?>   else
+2.0.0-p353 :047 >     false
+2.0.0-p353 :048?>   end
+ => true 
+2.0.0-p353 :049 > def string_message()s)t)r)i)n)g)[C
+2.0.0-p353 :050?>   if string.empty>[K?
+2.0.0-p353 :051?>     ""I"t" "[1P"'"s" "a"n" "e"m"p"t"y" "s"t"r"i"n"g"!"
+2.0.0-p353 :052?>     else
+2.0.0-p353 :053 >       ""T"h"i"s" "s"t"r"i"n"g" "i"s" "n"o"n"e"m"p"t"y"."
+2.0.0-p353 :054?>     ebd[K[Knd
+2.0.0-p353 :055?>   end
+ => nil 
+2.0.0-p353 :056 > pus[Kts string_message()")")
+It's an empty string!
+ => nil 
+2.0.0-p353 :057 > puts string_message("")[1P)[1P)")")f")o")o")o")[1P")b")a")r")
+This string is nonempty.
+ => nil 
+2.0.0-p353 :058 > def string_message()s)t)r)i)n)g)[C
+2.0.0-p353 :059?>   return ""T"[1P"I"t"'"s" "a" "e"m"p"t"y" "s"t"r"i"n"g"[C if string.empty?
+2.0.0-p353 :060?>   return ""T"h"e" "s"t"r"i"n"g" "i"s" "n"o"n"e"m"p"t"y"."
+2.0.0-p353 :061?>   end
+ => nil 
+2.0.0-p353 :062 > puts string_message()")")
+It's a empty string
+ => nil 
+2.0.0-p353 :063 > puts string_message("")[1P)[1P)")")f")o")o")b")a")r")
+The string is nonempty.
+ => nil 
+2.0.0-p353 :064 > def string_message()h)[1P)t)h)e)_)f)u)n)c)t)i)o)n)_)a)r)g)u)m)e)n)t)
+2.0.0-p353 :065?>   if the [K_function [K_argument.empty?
+2.0.0-p353 :066?>     ""I"t"'"s" "s"[1P"a"n" "e"m"p"t"y" "s"t"r"i"n"g"!"
+2.0.0-p353 :067?>     else
+2.0.0-p353 :068 >       ""T"h"e" "s"t"r"i"n"g" "i"s" "n"o"n"e"e"m"p"t"y"[1P"[1P"[1P"[1P"[1P"m"p"t"y"."
+2.0.0-p353 :069?>     end
+2.0.0-p353 :070?>   end
+ => nil 
+2.0.0-p353 :071 > puts string_message()")")
+It's an empty string!
+ => nil 
+2.0.0-p353 :072 > puts string_message("")[1P)[1P)")")f")o")o")b")a")r")
+The string is nonempty.
+ => nil 
+2.0.0-p353 :073 > exit
+]0;eve@ubuntu: ~/rails_projects/sample_appeve@ubuntu:~/rails_projects/sample_app$ exit
+exit
+
+Script done on Mon 17 Feb 2014 06:23:59 PM CST
