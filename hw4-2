@@ -1,0 +1,263 @@
+Script started on Mon 17 Feb 2014 06:35:03 PM CST
+]0;eve@ubuntu: ~/rails_projects/sample_appeve@ubuntu:~/rails_projects/sample_app$ ""f"o"o" "b"a"r" " " " "b"a"z"[C.aplit[K[K[K[K[Ksplit
+foo bar    baz.split: command not found
+]0;eve@ubuntu: ~/rails_projects/sample_appeve@ubuntu:~/rails_projects/sample_app$ "foo bar    baz".split[1Pbaz".split[1Pbaz".split
+foo bar  baz.split: command not found
+]0;eve@ubuntu: ~/rails_projects/sample_appeve@ubuntu:~/rails_projects/sample_app$ rails s[Kc
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > ""f"o"o" "b"a"r" " " " "s"p"l"i"t"[1P"[1P"[1P"[1P"[1P"b"a"z"[C.split
+ => ["foo", "bar", "baz"] 
+2.0.0-p353 :002 > ""f"o"o"x"b"a"r"x"b"a"z"x"[C.split()')')c')[1P')x')
+ => ["foo", "bar", "baz"] 
+2.0.0-p353 :003 > a = []4]2],] ]8],] ]1]7]
+ => [42, 8, 17] 
+2.0.0-p353 :004 > a[]0]
+ => 42 
+2.0.0-p353 :005 > a[]1]
+ => 8 
+2.0.0-p353 :006 > a[]2]
+ => 17 
+2.0.0-p353 :007 > a[]-]1]
+ => 17 
+2.0.0-p353 :008 > a
+ => [42, 8, 17] 
+2.0.0-p353 :009 > a.first
+ => 42 
+2.0.0-p353 :010 > a.second
+ => 8 
+2.0.0-p353 :011 > a.last
+ => 17 
+2.0.0-p353 :012 > a.last == a[]-]1]
+ => true 
+2.0.0-p353 :013 > a = a[K[K[K[K[Kx = a.length
+ => 3 
+2.0.0-p353 :014 > x == 3
+ => true 
+2.0.0-p353 :015 > x == 1
+ => false 
+2.0.0-p353 :016 > x != 1
+ => true 
+2.0.0-p353 :017 > x >= 1
+ => true 
+2.0.0-p353 :018 > x < 1
+ => false 
+2.0.0-p353 :019 > a
+ => [42, 8, 17] 
+2.0.0-p353 :020 > a.sort
+ => [8, 17, 42] 
+2.0.0-p353 :021 > a.reverse
+ => [17, 8, 42] 
+2.0.0-p353 :022 > a.shuffle
+ => [8, 17, 42] 
+2.0.0-p353 :023 > a
+ => [42, 8, 17] 
+2.0.0-p353 :024 > a 
+ => [42, 8, 17] 
+2.0.0-p353 :025 > a.sort!
+ => [8, 17, 42] 
+2.0.0-p353 :026 > s
+NameError: undefined local variable or method `s' for main:Object
+	from (irb):26
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :027 > a
+ => [8, 17, 42] 
+2.0.0-p353 :028 > a.push()6)
+ => [8, 17, 42, 6] 
+2.0.0-p353 :029 > a << 7
+ => [8, 17, 42, 6, 7] 
+2.0.0-p353 :030 >  a << ""f"o"o"[C << ""b"a"r"
+ => [8, 17, 42, 6, 7, "foo", "bar"] 
+2.0.0-p353 :031 > a
+ => [8, 17, 42, 6, 7, "foo", "bar"] 
+2.0.0-p353 :032 > a.join
+ => "8174267foobar" 
+2.0.0-p353 :033 > a.join()')'),') ')
+ => "8, 17, 42, 6, 7, foo, bar" 
+2.0.0-p353 :034 > 0..9
+ => 0..9 
+2.0.0-p353 :035 > 0..9 [K.to_a
+NoMethodError: undefined method `to_a' for 9:Fixnum
+	from (irb):35
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :036 > ()0).).)9)[C.to_a
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :037 > a = W[K%W[Kw[]f]o]o] ]b]a]r] ]b]a]z] ]q]u]u]x]
+ => ["foo", "bar", "baz", "quux"] 
+2.0.0-p353 :038 > a9[K[]0].].]2]
+ => ["foo", "bar", "baz"] 
+2.0.0-p353 :039 > a = ()0)/)[1P).).)9)[C.to_a
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :040 > a[]2].].](])]a)].)]l)]e)]n)]g)]t)]h)]-)]1)][C[C
+ => [2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :041 > a[2..(a.length-1)][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P]=][1P].].]-]1]
+ => [2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :042 > ()')')a')[C.).)')')e')[C[C.to_a
+ => ["a", "b", "c", "d", "e"] 
+2.0.0-p353 :043 > ()1).).)5)[C.each{} }|}|}i|}[C }p}u}t}s} }2}*}i}
+2
+4
+6
+8
+10
+ => 1..5 
+2.0.0-p353 :044 > ()1)-)-)[1P)[1P).).)5)[C.each do ||i|
+2.0.0-p353 :045 >     puts 2*1[Ki
+2.0.0-p353 :046?>   end
+2
+4
+6
+8
+10
+ => 1..5 
+2.0.0-p353 :047 > ()1).).)5)[C.each fo[K[Kdo ||n|u|m|b|e|r|[C
+2.0.0-p353 :048 >     puts 2*number
+2.0.0-p353 :049?>   pus[Kts ''-'-'[C
+2.0.0-p353 :050?>   end
+2
+--
+4
+--
+6
+--
+8
+--
+10
+--
+ => 1..5 
+2.0.0-p353 :051 > 3.times{{[K[K {}p}u}t}s} }"}"}B"}e"}t"}e"}l"}g"}e"}u"}s"}e"}!"}
+Betelgeuse!
+Betelgeuse!
+Betelgeuse!
+ => 3 
+2.0.0-p353 :052 > ()1).).)5)[C.map{} }|}|}[Ci|}[C }i}*}*}2} }
+ => [1, 4, 9, 16, 25] 
+2.0.0-p353 :053 > %w[]a] ]b] ]c]
+ => ["a", "b", "c"] 
+2.0.0-p353 :054 > %w[a b c].map{}|}|}c|}h|}a|}r|}[C }c}h}a}r}.}d}o}w}n}c}a}s}e}[1P}[1P}[1P}[1P}[1P}[1P}[1P}[1P}u}p}e}[1P}c}a}s}e}
+ => ["A", "B", "C"] 
+2.0.0-p353 :055 > %w[a b c].map{|char| char.upcase}[1P}[1P}[1P}[1P}[1P}[1P}d}o}w}n}c}a}s}e}
+ => ["a", "b", "c"] 
+2.0.0-p353 :056 > ()')')a')[C.).)')')z')[C[C.to_a.shuffle[]0].].]7][C.join[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+ => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] 
+2.0.0-p353 :057 > ('a'..'z').to_a.shuffle
+ => ["f", "t", "y", "w", "j", "v", "r", "c", "b", "q", "x", "o", "h", "k", "a", "z", "n", "l", "m", "d", "u", "s", "i", "p", "e", "g"] 
+2.0.0-p353 :058 > ('a'..'z').to_a.shuffle[]0].].]7]
+ => ["q", "f", "r", "x", "b", "u", "w", "k"] 
+2.0.0-p353 :059 > ('a'..'z').to_a.shuffle[0..7].join
+ => "vhwzicpu" 
+2.0.0-p353 :060 > user = {}
+ => {} 
+2.0.0-p353 :061 > user[]"]"]f"]i"]r"]s"]t"]_"]n"]a"]m"]e"][C ][1P][C = ""M"i"h"[1P"c"h"a"e"l"
+ => "Michael" 
+2.0.0-p353 :062 > user["first_name"] = "Michael"[1P[1P[1P[1P[1P[1@l[1@a[1@s[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"H"a"r"t"l"
+ => "Hartl" 
+2.0.0-p353 :063 > user[]"]"]f"]i"]r"]s"]t"]_"]n"]a"]m"]e"]
+ => "Michael" 
+2.0.0-p353 :064 > user
+ => {"first_name"=>"Michael", "last_name"=>"Hartl"} 
+2.0.0-p353 :065 > user = {}f}[1P}"}"}f"}i"}r"}s"}t"}_"}n"}a"}m"}e"}[C }=}>} }"}"}M"}i"}c"}h"}r"}[1P"}a"}e"}l"}[C,} }"}"}l"}a"}s"}t"}_"}n"}a"}m"}e"}[C }=}>} }"}"}H"}a"}r"}t"}l"}
+ => {"first_name"=>"Michael", "last_name"=>"Hartl"} 
+2.0.0-p353 :066 > ""n"a"m"e"[C.split()')')
+ => ["n", "a", "m", "e"] 
+2.0.0-p353 :067 > :name.splite[K()')')
+NoMethodError: undefined method `split' for :name:Symbol
+	from (irb):67
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :068 > ""f"o"o"b"a"r"[C.reverse
+ => "raboof" 
+2.0.0-p353 :069 > :foobar.revrs[K[Kerse
+NoMethodError: undefined method `reverse' for :foobar:Symbol
+	from (irb):69
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :070 > user = {}:}n}a}m}e} }=}>} }"}"}M"}i"}c"}h"}a"}e"}l"} "}H"}a"}r"}t"}l"}[C,} }e}m}a}i}l}=}[1P} }-}[1P}[1P}[1P}[1P}[1P}[1P}[1P}:}e}m}a}i}l} }=}>} }"}"}m"}i"}c"}h"}e"}a"}l"}@"}e"}x"}a"}m"}p"}l"}e"} [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C."}}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc"}o"}m"}
+ => {:name=>"Michael Hartl", :email=>"micheal@example.com"} 
+2.0.0-p353 :071 > user[]:]n]a]m]e]
+ => "Michael Hartl" 
+2.0.0-p353 :072 > user[]:]p]a]s]s]w]o]r]d]
+ => nil 
+2.0.0-p353 :073 > h1 = {}n}a}m}e}[1P}[1P}[1P}[1P}:}n}a}m}e} }=}>} }"}"}M"}i"}c"}h"}e"}a"}l"}[1P"}[1P"}[1P"}a"}e"}l"} "}H"}a"}r"}t"}l"}[C,} }:}e}m}a}i}l} }=}>} }"}"}m"}i"}c"}h"}a"}e"}l"}@"}e"}x"}a"}m"}p"}l"}e"}."}c"} [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co"}}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm"}
+ => {:name=>"Michael Hartl", :email=>"michael@example.com"} 
+2.0.0-p353 :074 > h1 = {:name => "Michael Hartl", :email => "michael@example.com""}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C = {:name => "Michael Hartl", :email => "michael@example.com"}[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 = {:name => "Michael Hartl", :email => "michael@example.com"}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+ => {:name=>"Michael Hartl", :email=>"michael@example.com"} 
+2.0.0-p353 :075 > hi == h[K[K[K[K[K[K1 == h2
+ => true 
+2.0.0-p353 :076 > h1 == h22 = {:name => "Michael Hartl", :email => "michael@example.com""}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1
+[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2
+[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1 == h2[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 = {:name => "Michael Hartl", :email => "michael@example.com""}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cname => "Michael Hartl", :email => "michael@example.com"}[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C: => "Michael Hartl", :email => "michael@example.com"}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemail => "michael@example.com"}[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C: => "michael@example.com"}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+SyntaxError: (irb):76: syntax error, unexpected =>
+h2 = {name: => "Michael Hartl", email: => "michael@example.com"}
+              ^
+(irb):76: syntax error, unexpected ',', expecting end-of-input
+h2 = {name: => "Michael Hartl", email: => "michael@example.com"}
+                               ^
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/eve/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :077 > h2
+ => {:name=>"Michael Hartl", :email=>"michael@example.com"} 
+2.0.0-p353 :078 > pat[Krams = {}
+ => {} 
+2.0.0-p353 :079 > params[]:]u]s]e]r][C = {}n}a}m}e}:} }"}"}M"}i"}c"}h"}a"}e"}l"} "}H"}a"}r"}t"}l"}[C,} }e}m}a}i}l}:} }"}"}m"}h"}a"}r"}t"}l"}@"}e"}x"}a"}m"}p"} [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl"}}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce"}."}c"}o"}m"}
+ => {:name=>"Michael Hartl", :email=>"mhartl@example.com"} 
+2.0.0-p353 :080 > paran[Kms
+ => {:user=>{:name=>"Michael Hartl", :email=>"mhartl@example.com"}} 
+2.0.0-p353 :081 > params[]:]u]s]e]r][C[]:]e]m]a]i]l]
+ => "mhartl@example.com" 
+2.0.0-p353 :082 > flash = {}s}u}c}c}e}s}s}:} }"}"}I"}t"} "}w"}o"}r"}k"}e"}d"}!"}[C,} }e}r}r}o}r}:} }"}"}I"}t"} "}f"}a"}i"}l"}e"}d"}."}
+ => {:success=>"It worked!", :error=>"It failed."} 
+2.0.0-p353 :083 > flash.d[Keach do ||k|e|y|,| |v|a|l|u|e|
+2.0.0-p353 :084 >     puts ""K"e"y" "#"{"}"k}"e}"y}".}"i}"n}"s}"p}"e}"c}"t}"[C "j"[1P"h"a"s" "v"a"l"u"e" "#"{"}"v}"a}"l}"u}"e}".}"i}"n}"s}"p}"e}"c}"t}"
+2.0.0-p353 :085?>   ebd[K[Knd
+Key :success has value "It worked!"
+Key :error has value "It failed."
+ => {:success=>"It worked!", :error=>"It failed."} 
+2.0.0-p353 :086 > puts()1)-)[1P).).)5)[C.to_a
+1..5
+ => [] 
+2.0.0-p353 :087 > puts(1..5).to_a s(1..5).to_a[1Ps(1..5).to_a[C (1..5).to_a
+1
+2
+3
+4
+5
+ => nil 
+2.0.0-p353 :088 > puts ()1).).)5)[C.to_a.inspect
+[1, 2, 3, 4, 5]
+ => nil 
+2.0.0-p353 :089 > puts :name. [K[K, :name.inspect
+name
+:name
+ => nil 
+2.0.0-p353 :090 > puts ""I"t" "w"o"r"k"e"d"!"[C, ""I"t" "w"o"r"k"e"d"!"[C.inspect
+It worked!
+"It worked!"
+ => nil 
+2.0.0-p353 :091 > p :name
+:name
+ => :name 
+2.0.0-p353 :092 > exit
+]0;eve@ubuntu: ~/rails_projects/sample_appeve@ubuntu:~/rails_projects/sample_app$ exit
+exit
+
+Script done on Mon 17 Feb 2014 07:15:44 PM CST
