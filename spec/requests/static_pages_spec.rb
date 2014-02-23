@@ -40,16 +40,10 @@ describe "Static pages" do
     end
   end
 
-  describe "Contact page" do
+   describe "Contact page" do
+    before { visit contact_path }
 
-    it "should have the content 'Contact'" do
-      visit contact_path
-      expect(page).to have_content('Contact')
-    end
-
-    it "should have the title 'Contact'" do
-      visit contact_path
-      expect(page).to have_title("Ruby on Rails Tutorial Sample App | Contact")
-    end
+    it { should have_selector('h1', text: 'Contact') }
+    it { should have_title(full_title('Contact')) }
   end
 end
