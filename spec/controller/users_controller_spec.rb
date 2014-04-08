@@ -31,10 +31,10 @@ describe UsersController do
 
   describe "GET edit" do
     it "assigns the requested user as @user" do
-      author = Author.create! valid_attributes
-      get :edit, {:id => author.to_param}, valid_session
-      expect(assigns(:author)).to eq(author)
+      user = User.create! valid_attributes
+      get :edit, {:id => user.to_param}, valid_session
+      expect(assigns(:user)).to eq(user)
     end
   end
-
+end
   
