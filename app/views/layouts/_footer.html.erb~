@@ -1,8 +1,5 @@
 <footer class="footer">
-  <small>
-    <a href="http://railstutorial.org/">Rails Tutorial</a>
-    by Michael Hartl
-  </small>
+
   <nav>
     <ul>
       <li><a href="https://github.com/wwyiyi/midterm/">Github page</a></li>
