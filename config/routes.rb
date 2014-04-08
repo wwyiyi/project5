@@ -6,7 +6,6 @@ Project5::Application.routes.draw do
   
   resources :users
   root 'users#index'
-  #match '/', to: "authors#index", via: 'get'
   match '/users', to: "users#index", via: 'get'
   match '/users/new', to: "users#new", via: 'get'
   
@@ -14,6 +13,7 @@ Project5::Application.routes.draw do
   resources :advertisements 
   match '/advertisements', to: "advertisements#index", via: 'get'
   match '/advertisements/new', to: "advertisements#new", via: 'get'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
