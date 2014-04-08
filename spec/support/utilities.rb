@@ -18,14 +18,14 @@ def valid_signup
   fill_in "Name",         with: "Example User"
   fill_in "Email",        with: "user@example.com"
   fill_in "Password",     with: "foobar"
-  fill_in "Confirmation", with: "foobar"
+  fill_in "Confirm Password", with: "foobar"
 end
 
 def invalid_signup
   fill_in "Name",         with: "Foo Bar"
   fill_in "Email",        with: "foo@invalid"
   fill_in "Password",     with: ""
-  fill_in "Confirmation", with: ""
+  fill_in "Confirm Password", with: ""
 end
 
 def sign_in(user, options={})

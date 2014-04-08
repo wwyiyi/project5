@@ -45,6 +45,9 @@ describe "User pages" do
             click_link('delete', match: :first)
           end.to change(User, :count).by(-1)
         end
+
+    
+
         it { should_not have_link('delete', href: user_path(admin)) }
       end
     end
@@ -76,12 +79,8 @@ describe "User pages" do
     end
 
     describe "with valid information" do
-      #let(:user) { FactoryGirl.create(:user) }
       before { valid_signup }
-
       
-      #before { valid_signup(user) }
-
       it "should create a user" do
         expect { click_button submit }.to change(User, :count).by(1)
       end
@@ -134,6 +133,18 @@ describe "User pages" do
       it { should have_content("Update your profile") }
       it { should have_title("Edit user") }
       it { should have_link('change', href: 'http://gravatar.com/emails') }
+    end
+    
+    describe "forbidden attributes" do
+      let(:params) do
+        { user: { admin: true, password: user.password,
+                  password_confirmation: user.password } }
+      end
+      before do
+        sign_in user, no_capybara: true
+        patch user_path(user), params
+      end
+      specify { expect(user.reload).not_to be_admin }
     end
 
     describe "with valid information" do
