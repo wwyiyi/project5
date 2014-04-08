@@ -1,8 +1,9 @@
 Project5::Application.routes.draw do
-
+  resources :advertisements
 
   resources :microposts
 
+  resources :users
   
   resources :users
   root 'users#index'
