@@ -49,13 +49,17 @@ describe "User pages" do
         it { should_not have_link('delete', href: user_path(admin)) }
       end
     end
-
-    it "should list each user" do
-      User.all.each do |user|
-        expect(page).to have_selector('li', text: user.name)
-      end
-    end
   end
+  
+  describe "microposts pagination" do
+    let(:user) { FactoryGirl.create(:user) }
+    after(:all) { user.microposts.delete_all unless user.microposts.nil? }
+    it "should paginate the feed" do
+      40.times { FactoryGirl.create(:micropost, user: user) }
+      visit user_path(user)
+      page.should have_selector('div.pagination')
+  end  
+end
 
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }
@@ -73,6 +77,7 @@ describe "User pages" do
       it { should have_content(user.microposts.count) }
     end
   end
+
 
   describe "signup page" do
 

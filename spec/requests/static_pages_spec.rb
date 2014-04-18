@@ -22,12 +22,31 @@ describe "Static pages" do
         visit root_path
       end
 
+      describe "should have sidebar with proper plural counts" do
+        it { should have_content(user.microposts.count) }
+        it {should have_content("microposts")}
+        specify { expect(user.microposts.count).to  eq 2 }
+      end
+
       it "should render the user's feed" do
         user.feed.each do |item|
           expect(page).to have_selector("li##{item.id}", text: item.content)
         end
       end
     end
+
+
+    describe "for signed-in users with one micropost" do
+      let(:user) { FactoryGirl.create(:user) }
+      before do
+        FactoryGirl.create(:micropost, user: user, content: "Lorem ipsum")
+        sign_in user
+        visit root_path
+      end
+        it { should have_content('micropost')}
+        it { should have_content(user.microposts.count)}
+        specify { expect(user.microposts.count).to  eq 1} 
+    end  
   end
 
   describe "Help page" do
