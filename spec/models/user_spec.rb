@@ -209,7 +209,37 @@ describe User do
       it { should_not be_following(other_user) }
       its(:followed_users) { should_not include(other_user) }
     end
+    
+    it "should destroy associated followings" do
+      followings = @user.relationships.to_a
+  
+      @user.destroy
+      expect(followings).not_to be_empty
+      followings.each do |following|
+         expect(Relationship.where(follower_id: @user.id)).to be_empty
+      end
+    end
+  end
+  
+  describe "dependent destroy for followers" do
+    let(:other_user) { FactoryGirl.create(:user) }
+  	before do
+      @user.save
+      other_user.follow!(@user)
+    end
+
+    it "should destroy associated followers" do
+  
+      followers = @user.reverse_relationships.to_a
+      @user.destroy
+      expect(followers).not_to be_empty
+      followers.each do |follower|
+        expect(Relationship.where(followed_id: @user.id)).to be_empty
+      end
+    end
   end
 end
+
+
 
              
