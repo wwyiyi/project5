@@ -1,2 +1,15 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, 'Help') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project5 | <%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Help</h1>
+    <p>
+      Get help by checking out our <a href="https://github.com/wwyiyi/project5">codes</a>.
+      To get help on how to build this app, please refer to the
+      <a href="http://railstutorial.org/book">Rails Tutorial book</a>.
+    </p>
+  </body>
+</html>
