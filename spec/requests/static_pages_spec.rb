@@ -32,7 +32,7 @@ describe "StaticPages" do
     click_link "Home"
     click_link "Sign up now!"
     expect(page).to have_content("Sign up")
-    click_link "Project5"
+    click_link "Project5" 
     expect(page).to have_content("Home")
   end
 end
