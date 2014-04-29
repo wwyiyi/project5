@@ -17,8 +17,11 @@ html {
 }
 
 body {
-  padding-top: 60px;
+   padding-top: 7em;
+   background-image:url("/assets/chevron.jpg");
+   background-repeat:no-repeat;
 }
+
 
 section {
   overflow: auto;
@@ -36,6 +39,11 @@ textarea {
   }
 }
 
+ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
 
 aside {
   section {
@@ -46,7 +54,7 @@ aside {
       padding-top: 0;
     }
     span {
-      display: block;
+      display: block;      
       margin-bottom: 3px;
       line-height: 1;
     }
@@ -60,11 +68,6 @@ aside {
   }
 }
 
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
-
 
 
 /* typography */
@@ -74,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -101,7 +104,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #6495ED;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -121,9 +124,9 @@ footer {
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
   a {
-    color: $gray;
+    color: violet;
     &:hover {
-      color: $grayDarker;
+      color: white;
     }
   }
   small {
