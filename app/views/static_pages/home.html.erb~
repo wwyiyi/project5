@@ -1,8 +1,8 @@
 <div class="center hero-unit">
-<h1>Home</h1>
+<h2>Welcome Home</h2>
 <h2>
-  This is the home page for our application.
+  This is where you find all the excitement of life. Through ads.
 </h2>
 
-<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
