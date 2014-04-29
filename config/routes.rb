@@ -6,10 +6,11 @@ Project5::Application.routes.draw do
 
   
   resources :users
-  root 'users#index'
+  
   match '/users', to: "users#index", via: 'get'
   match '/users/new', to: "users#new", via: 'get'
-  
+  match '/', to: 'static_pages#home', via: 'get'  
+  match '/help',    to: 'static_pages#help',    via: 'get'
 
   resources :advertisements 
   match '/advertisements', to: "advertisements#index", via: 'get'
@@ -20,7 +21,7 @@ Project5::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+    root 'static_pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
