@@ -1,6 +1,6 @@
 Project5::Application.routes.draw do
 
-  get "users/new"
+  
   get "static_pages/home"
   get "static_pages/help"
   resources :microposts
@@ -12,6 +12,7 @@ Project5::Application.routes.draw do
   match '/users/new', to: "users#new", via: 'get'
   match '/', to: 'static_pages#home', via: 'get'  
   match '/help',    to: 'static_pages#help',    via: 'get'
+  match '/signup',  to: 'users#new',            via: 'get'
 
   resources :advertisements 
   match '/advertisements', to: "advertisements#index", via: 'get'
