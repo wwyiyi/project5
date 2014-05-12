@@ -4,8 +4,13 @@ Project5::Application.routes.draw do
   get "static_pages/help"
   resources :microposts
   resources :sessions, only: [:new, :create, :destroy]  
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   resources :microposts, only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
   
   # match '/users', to: "users#index", via: 'get'
   match '/users/new', to: "users#new", via: 'get'

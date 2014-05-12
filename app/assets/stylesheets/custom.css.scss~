@@ -208,11 +208,11 @@ input {
 }
 
 .content {
-  display: #6495ED;
+  display: block;
 }
 
 .timestamp {
-  color: black;
+  color: #6495ED;
 }
 
 aside {
