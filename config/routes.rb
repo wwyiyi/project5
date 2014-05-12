@@ -5,6 +5,7 @@ Project5::Application.routes.draw do
   resources :microposts
   resources :sessions, only: [:new, :create, :destroy]  
   resources :users
+  resources :microposts, only: [:create, :destroy]
   
   # match '/users', to: "users#index", via: 'get'
   match '/users/new', to: "users#new", via: 'get'
