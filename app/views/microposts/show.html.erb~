@@ -20,4 +20,32 @@
     </span>
 </li>
 
-<%= link_to 'Back', microposts_path %>
+<h2>Comments</h2>
+<% @micropost.comments.each do |comment| %>
+  <br> 
+  
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+
+   <p>
+    Commenter:
+    <%= comment.commenter %>
+  </p>
+  </br>
+<% end %>
+
+<h2>Add a comment:</h2>
+  <%= form_for @post.comments do |f| %>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'See more from this friend', @micropost.user %> |
+<%= link_to 'Return to my account', root_path %>

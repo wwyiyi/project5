@@ -2,14 +2,17 @@ Project5::Application.routes.draw do
   
   get "static_pages/home"
   get "static_pages/help"
-  resources :microposts, , only: [:create, :destroy, :show]
+  resources :microposts
   resources :sessions, only: [:new, :create, :destroy]  
   resources :users do
     member do
       get :following, :followers
     end
   end
-  resources :microposts, only: [:create, :destroy]
+  resources :microposts do
+    resources :comments
+  end
+
   resources :relationships, only: [:create, :destroy]
   
   # match '/users', to: "users#index", via: 'get'
