@@ -2,7 +2,7 @@ Project5::Application.routes.draw do
   
   get "static_pages/home"
   get "static_pages/help"
-  resources :microposts
+  resources :microposts, only: [:create, :destroy, :show]
   resources :sessions, only: [:new, :create, :destroy]  
   resources :users do
     member do

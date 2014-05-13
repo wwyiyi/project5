@@ -20,4 +20,4 @@
     </span>
 </li>
 
-<%= link_to 'Back', @micropost.user %>
+<%= link_to 'Back', microposts_path %>
