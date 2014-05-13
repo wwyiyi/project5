@@ -1,0 +1,4 @@
+bundle exec rspec spec/modelsclass Post < ActiveRecord::Base
+  validates :micropost_id, presence: true
+  belongs_to :micropost
+end

@@ -23,7 +23,7 @@
 <h2>Comments</h2>
 <% @micropost.comments.each do |comment| %>
   <br> 
-  
+  <%= render 'shared/user_info' %>  
   <p>
     <strong>Comment:</strong>
     <%= comment.body %>
