@@ -3,10 +3,20 @@
   <aside class="span4">
     <section>
       <h1>
+<<<<<<< HEAD
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
     </section>
+=======
+        <%= gravatar_for @user, size: 40 %>
+        <%= @user.name %>
+      </h1>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   </aside>
   <div class="span8">
     <% if @user.microposts.any? %>

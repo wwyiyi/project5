@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Project5::Application.routes.draw do
   
   get "static_pages/home"
@@ -5,11 +6,15 @@ Project5::Application.routes.draw do
   resources :microposts
   resources :sessions, only: [:new, :create, :destroy]  
   resources :microposts, only: [:new, :create, :destroy, :show]
+=======
+SampleApp::Application.routes.draw do
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   resources :users do
     member do
       get :following, :followers
     end
   end
+<<<<<<< HEAD
   resources :microposts do
     resources :comments
   end
@@ -29,11 +34,30 @@ Project5::Application.routes.draw do
   match '/advertisements/new', to: "advertisements#new", via: 'get'
   
 
+=======
+  resources :sessions,   only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy, :show]
+  resources :relationships, only: [:create, :destroy]
+  
+  root  'static_pages#home'
+  match '/signup', to: "users#new", via: 'get'
+  match '/help',    to: 'static_pages#help',    via: 'get'
+  match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
+  #match '/microposts', to: 'microposts#show', via: 'get'
+ 
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+<<<<<<< HEAD
     root 'static_pages#home'
+=======
+  # root 'welcome#index'
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

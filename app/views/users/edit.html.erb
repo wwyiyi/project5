@@ -3,6 +3,7 @@
 
 <div class="row">
   <div class="span6 offset3">
+<<<<<<< HEAD
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
@@ -25,3 +26,26 @@
     <a href="http://gravatar.com/emails">change</a>
   </div>
 </div>
+=======
+   <%= form_for(@user) do |f| %>
+     <%= render 'shared/error_messages', object: f.object %>
+
+       <%= f.label :name %>
+       <%= f.text_field :name %>
+ 
+       <%= f.label :email %>
+       <%= f.text_field :email %>
+ 
+       <%= f.label :password %>
+       <%= f.password_field :password %>
+ 
+       <%= f.label :password_confirmation, "Confirm Password" %>
+       <%= f.password_field :password_confirmation %>
+ 
+       <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+   <% end %>
+  </div>
+</div>
+
+
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba

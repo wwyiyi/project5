@@ -3,6 +3,7 @@ ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.2'
+<<<<<<< HEAD
 gem 'pg', '0.15.1'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sass', '3.2.13'
@@ -16,6 +17,15 @@ gem 'sprockets', '2.11.0'
 gem "paperclip", "~> 4.1"
 
 group :development, :test do
+=======
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt-ruby', '3.1.2'
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+
+group :development, :test do
+  gem 'sqlite3', '1.3.8'
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   gem 'rspec-rails', '2.13.1'
 end
 
@@ -24,13 +34,21 @@ group :test do
   gem 'capybara', '2.1.0'
   gem 'factory_girl_rails', '4.2.1'
   gem 'cucumber-rails', '1.4.0', :require => false
+<<<<<<< HEAD
   gem 'sqlite3'
+=======
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 end
 
 gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
+<<<<<<< HEAD
 
+=======
+gem 'jquery-rails', '3.0.4'
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 
@@ -39,5 +57,11 @@ group :doc do
 end
 
 group :production do
+<<<<<<< HEAD
   gem 'rails_12factor', '0.0.2'
 end
+=======
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba

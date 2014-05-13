@@ -1,4 +1,5 @@
 <% if signed_in? %>
+<<<<<<< HEAD
   <div class="row">
     <aside class="span4">
       <section>
@@ -26,4 +27,18 @@
     <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
   </div>
 
+=======
+  <%= render 'shared/home_signedin' %>
+  <section>
+    <%= render 'shared/user_info' %>
+  </section>
+  <section>
+    <%= render 'shared/stats' %>
+  </section>
+  <section>
+    <%= render 'shared/micropost_form' %>
+  </section>
+<% else %>
+  <%= render 'shared/home_unsigned' %>
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 <% end %>

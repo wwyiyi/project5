@@ -1,0 +1,34 @@
+Script started on Tue 18 Feb 2014 01:32:57 AM CST
+]0;eve@ubuntu: ~/rails_projects/sample_appeve@ubuntu:~/rails_projects/sample_app$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > def string_shuffle()s)[C
+2.0.0-p353 :002?>   s.split()')')[C.shuffle[K[K[Kfle.join
+2.0.0-p353 :003?>   end
+ => nil 
+2.0.0-p353 :004 > string_shuffle()")")f")o")o")b")a")r")
+ => "boraof" 
+2.0.0-p353 :005 > class String
+2.0.0-p353 :006?>   def shuffle
+2.0.0-p353 :007?>     self.split()')')[C.shuffle.join
+2.0.0-p353 :008?>     end
+2.0.0-p353 :009?>   end
+ => nil 
+2.0.0-p353 :010 > ""f"o"o"b"a"r"[C.shufle[K[Kfle
+ => "raofbo" 
+2.0.0-p353 :011 > person1 = {}:}n}a}[1P}[1P}f}i}r}s}t}_}n}a}m}e}:}[C[1P}[1P}[1P}[1P}[1P}[1P} }=}>} }"}"}f"}i"}r"}s"}t"}_"}f"}a"}t"}h"}e"}r"}[C,} }:}l}a}s}t} }=}>} }"}"}l"}a"}s"}t"}_"}f"}a"}t"}h"}e"}r"}
+ => {:first=>"first_father", :last=>"last_father"} 
+2.0.0-p353 :012 > person2 = {}:}f}i}r}s}t} }=}>} }"}"}f"}i"}r"}s"}t"}_"}m"}o"}t"}h"}e"}r"}[C,} }l}a}s}t}[1P}[1P}[1P}[1P}:}l}a}s}t} }=}>} }"}"}l"}a"}s"}t"}_"}m"}o"}t"}h"}e"}r"}
+ => {:first=>"first_mother", :last=>"last_mother"} 
+2.0.0-p353 :013 > person3 = {}"}"}[1P}\"}[1P"}[1P}:}f}i}r}s}t} }=}>} }"}"}f"}i"}r"}s"}t"}_"}c"}h"}i"}l"}d"}[C,} }:}l}a}s}t} }=}>} }"}"}l"}a"}s"}t"}_"}c"}h"}i"}l"}d"}
+ => {:first=>"first_child", :last=>"last_child"} 
+2.0.0-p353 :014 > params = {}:}f}a}t}h}e}r}:}[1P} }=}>} }p}e}r}s}o}n}1},} }:}m}o}t}h}e}r} }=}>} }p}e}r}s}o}n}2},} }c}h}i}l}[1P}[1P}[1P}[1P}:}c}h}i}l}d} }=}>} }p} [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce}}r}s}o}n}3}
+ => {:father=>{:first=>"first_father", :last=>"last_father"}, :mother=>{:first=>"first_mother", :last=>"last_mother"}, :child=>{:first=>"first_child", :last=>"last_child"}} 
+2.0.0-p353 :015 > params[]:]f]a]t]h]e]r][C[]:]f]i]r]s]t]
+ => "first_father" 
+2.0.0-p353 :016 > params[]:]c]h]i]l]d][C[]:]l]a]s]t]
+ => "last_child" 
+2.0.0-p353 :017 > exit
+]0;eve@ubuntu: ~/rails_projects/sample_appeve@ubuntu:~/rails_projects/sample_app$ exit
+exit
+
+Script done on Tue 18 Feb 2014 01:44:48 AM CST

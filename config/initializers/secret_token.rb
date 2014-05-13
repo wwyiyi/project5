@@ -9,7 +9,10 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 require 'securerandom'
 
 def secure_token
@@ -25,4 +28,8 @@ def secure_token
   end
 end
 
+<<<<<<< HEAD
 Project5::Application.config.secret_key_base = secure_token
+=======
+SampleApp::Application.config.secret_key_base = secure_token
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba

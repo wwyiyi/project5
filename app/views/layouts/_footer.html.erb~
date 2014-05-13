@@ -1,8 +1,19 @@
 <footer class="footer">
+<<<<<<< HEAD
   <nav>
     <ul>
       <li><%= link_to "Help", help_path %></li>
       <li><a href="https://github.com/wwyiyi/project5/">Github page</a></li>
+=======
+  <small>
+    <a href="https://github.com/wwyiyi/project5">Find it on Github</a>
+    by Michael Hartl
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to "About",   about_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
     </ul>
   </nav>
 </footer>

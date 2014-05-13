@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%= form_for(@micropost, :html => {:multipart => true}) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <p>
@@ -10,6 +11,16 @@
      <%= f.label :pic, "Attach a picture of your goodie..." %><br>
     <%= f.file_field :pic %>
   </p>
+=======
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_field :content, placeholder: "Header..." %>
+  </div>
+  <div class="field">
+    <%= f.text_area :body, placeholder: "Compose new advertisement..." %>
+  </div>
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
   <span class="countdown"></span>
 <% end %>

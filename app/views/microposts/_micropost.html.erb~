@@ -2,10 +2,16 @@
   <span class="content"><%= micropost.content %></span>
   <span class="timestamp">
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.
+<<<<<<< HEAD
   </span>
   <% if current_user?(micropost.user) %>
     <%= link_to "delete", micropost, method: :delete,
                                      data: { confirm: "You sure?" },
                                      title: micropost.content %>
   <% end %>
+=======
+    <%= link_to micropost.show, user %>
+  </span>
+  <%= render 'shared/delete_micropost', micropost: micropost %>
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 </li>

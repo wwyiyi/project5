@@ -17,12 +17,18 @@ html {
 }
 
 body {
+<<<<<<< HEAD
    padding-top: 7em;
    background-image:url("/assets/chevron.jpg");
    background-repeat:no-repeat;
 }
 
 
+=======
+  padding-top: 60px;
+}
+
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 section {
   overflow: auto;
 }
@@ -39,11 +45,14 @@ textarea {
   }
 }
 
+<<<<<<< HEAD
 ul.navbar {
     position: absolute;
     top: 2em;
     left: 1em;
     width: 9em }
+=======
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 
 aside {
   section {
@@ -54,7 +63,11 @@ aside {
       padding-top: 0;
     }
     span {
+<<<<<<< HEAD
       display: block;      
+=======
+      display: block;
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
       margin-bottom: 3px;
       line-height: 1;
     }
@@ -68,6 +81,14 @@ aside {
   }
 }
 
+<<<<<<< HEAD
+=======
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 
 
 /* typography */
@@ -77,7 +98,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+<<<<<<< HEAD
   font-size: 2em;
+=======
+  font-size: 3em;
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -93,6 +118,7 @@ h2 {
 }
 
 h3 {
+<<<<<<< HEAD
   font-size: 1.4em;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -101,11 +127,30 @@ h3 {
   color: #000000;
 }
 
+=======
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-top: 30px;
+  //text-align: center;
+  font-weight: bold;
+}
+
+
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
+<<<<<<< HEAD
+=======
+p1 {
+  font-size: 1.3em;
+  line-height: 1.7em;
+  /*margin-bottom: 10px;*/
+ /* border-bottom:thin solid $grayLight;*/
+}
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 
 /* header */
 
@@ -113,14 +158,25 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
+<<<<<<< HEAD
   color: #6495ED;
   
+=======
+  color: purple;
+  font-style:oblique;
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+<<<<<<< HEAD
   &:hover {
     color: white;
+=======
+  font-family:"Times New Roman", Times, serif;
+  &:hover {
+    color: purple;
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
     text-decoration: none;
   }
 }
@@ -133,9 +189,15 @@ footer {
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
   a {
+<<<<<<< HEAD
     color: black;
     &:hover {
       color: white;
+=======
+    color: $gray;
+    &:hover {
+      color: $grayDarker;
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
     }
   }
   small {
@@ -151,6 +213,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 /* sidebar */
 
 aside {
@@ -209,6 +272,8 @@ aside {
   }
 }
 
+=======
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -273,6 +338,7 @@ input {
     border-top: 1px solid #e8e8e8;
   }
 }
+<<<<<<< HEAD
 
 .content {
   display: block;
@@ -283,6 +349,18 @@ input {
   color: #000000;
 }
 
+=======
+.content {
+  display: block;
+}
+.timestamp {
+  color: $grayLight;
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 aside {
   textarea {
     height: 100px;
@@ -290,3 +368,43 @@ aside {
   }
 }
 
+<<<<<<< HEAD
+=======
+/* micropost jQuery countdown */
+
+.countdown {
+  display: inline;
+  padding-left: 10px;
+  color: $grayLight;
+}
+
+/* sidebar */
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba

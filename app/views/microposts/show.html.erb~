@@ -3,6 +3,7 @@
       <%= @micropost.content %>
     </span>
 </h1>
+<<<<<<< HEAD
 <h3>
      <%= @micropost.body%>
      <br/>
@@ -14,6 +15,14 @@
 </p1>
 <li>
   
+=======
+<p1>
+    <span class="content">
+      <%= @micropost.body %>
+    </span>
+</p1>
+<li>
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   <%= link_to gravatar_for(@micropost.user), @micropost.user %>
     <span class="user">
       <%= link_to @micropost.user.name, @micropost.user %>
@@ -21,6 +30,7 @@
 </li>
 <li>
     <span class="timestamp">
+<<<<<<< HEAD
       Posted at <%= @micropost.created_at.to_s %>.
     </span>
 </li>
@@ -57,3 +67,10 @@
 
 <%= link_to 'See more from this friend', @micropost.user %> |
 <%= link_to 'Return to my account', root_path %>
+=======
+      Posted <%= time_ago_in_words(@micropost.created_at) %> ago.
+    </span>
+</li>
+
+
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba

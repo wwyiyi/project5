@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140513185436) do
 
   create_table "advertisements", force: true do |t|
@@ -29,6 +30,9 @@ ActiveRecord::Schema.define(version: 20140513185436) do
   end
 
   add_index "comments", ["micropost_id"], name: "index_comments_on_micropost_id"
+=======
+ActiveRecord::Schema.define(version: 20140513013213) do
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 
   create_table "microposts", force: true do |t|
     t.string   "content"
@@ -36,6 +40,7 @@ ActiveRecord::Schema.define(version: 20140513185436) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "body"
+<<<<<<< HEAD
     t.string   "attach_file_name"
     t.string   "attach_content_type"
     t.integer  "attach_file_size"
@@ -44,6 +49,8 @@ ActiveRecord::Schema.define(version: 20140513185436) do
     t.string   "pic_content_type"
     t.integer  "pic_file_size"
     t.datetime "pic_updated_at"
+=======
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   end
 
   add_index "microposts", ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"

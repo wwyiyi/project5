@@ -27,4 +27,8 @@ end
 
 Then /^they should see a signout link$/ do
   expect(page).to have_link('Sign out', href: signout_path)
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba

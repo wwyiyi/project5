@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 Project5::Application.configure do
+=======
+SampleApp::Application.configure do
+
+  config.force_ssl = true
+
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -27,7 +34,11 @@ Project5::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
+<<<<<<< HEAD
   config.assets.compile = true
+=======
+  config.assets.compile = false
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -40,7 +51,11 @@ Project5::Application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+<<<<<<< HEAD
   config.force_ssl = true
+=======
+  # config.force_ssl = true
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 
   # Set to :debug to see everything in the log.
   config.log_level = :info

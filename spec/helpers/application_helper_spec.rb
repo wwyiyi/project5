@@ -8,7 +8,11 @@ describe ApplicationHelper do
     end
 
     it "should include the base title" do
+<<<<<<< HEAD
       expect(full_title("foo")).to match(/^Project5/)
+=======
+      expect(full_title("foo")).to match(/^Ruby on Rails Tutorial Sample App/)
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
     end
 
     it "should not include a bar for the home page" do
@@ -16,4 +20,7 @@ describe ApplicationHelper do
     end
   end
 end
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba

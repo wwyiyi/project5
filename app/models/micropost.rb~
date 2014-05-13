@@ -1,5 +1,6 @@
 class Micropost < ActiveRecord::Base
   belongs_to :user
+<<<<<<< HEAD
   has_many :comments
   default_scope -> { order('created_at DESC') }
   validates :content, presence: true, length: { maximum: 140 }
@@ -10,6 +11,11 @@ class Micropost < ActiveRecord::Base
     :styles => 
           { :medium => "300x300>", :thumb => "100x100>" }
   has_attached_file :attach
+=======
+  default_scope -> { order('created_at DESC') }
+  validates :content, presence: true, length: { maximum: 140 }
+  validates :user_id, presence: true
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 
   # Returns microposts from the users being followed by the given user.
   def self.from_users_followed_by(user)

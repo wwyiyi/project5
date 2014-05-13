@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Project5::Application.configure do
+=======
+SampleApp::Application.configure do
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's
@@ -33,7 +37,10 @@ Project5::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+<<<<<<< HEAD
 
   # Speed up tests by lowering bcrypt's cost function.
   ActiveModel::SecurePassword.min_cost = true
+=======
+>>>>>>> 5f197a9652eb58b8dce3b0670f809b27bd0a85ba
 end
