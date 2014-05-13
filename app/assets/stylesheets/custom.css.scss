@@ -117,11 +117,12 @@ p1 {
   margin-right: 10px;
   font-size: 1.7em;
   color: purple;
-  text-transform: uppercase;
+  font-style:oblique;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  font-family:"Courier New", Times, serif;
   &:hover {
     color: purple;
     text-decoration: none;
