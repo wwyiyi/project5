@@ -3,12 +3,17 @@
       <%= @micropost.content %>
     </span>
 </h1>
-<p1>
-    
-      <%= @micropost.body %>
-    
+<h3>
+     <%= @micropost.body%>
+     <br/>
+
+</h3>
+      <!-- display the avatar in both the original size and the thumbnail size -->
+      <%= image_tag @micropost.pic.url %><br/>
+      
 </p1>
 <li>
+  <span></span>
   <%= link_to gravatar_for(@micropost.user), @micropost.user %>
     <span class="user">
       <%= link_to @micropost.user.name, @micropost.user %>
@@ -16,13 +21,12 @@
 </li>
 <li>
     <span class="timestamp">
-      Posted <%= time_ago_in_words(@micropost.created_at) %> ago.
+      Posted at <%= @micropost.created_at.to_s %>.
     </span>
 </li>
 
-<h2>Comments</h2>
+<h3>Comments</h3>
 <% @micropost.comments.each do |comment| %>
-  <br> 
   
   <p>
     <strong>Comment:</strong>
@@ -36,8 +40,12 @@
   </br>
 <% end %>
 
-<h2>Add a comment:</h2>
+<h3>Add a comment:</h3>
   <%= form_for [@micropost, Comment.new] do |f| %>
+  <p>
+    <%= f.label :commenter %><br>
+    <%= f.text_field :commenter %>
+  </p>
   <p>
     <%= f.label :body %><br>
     <%= f.text_area :body %>

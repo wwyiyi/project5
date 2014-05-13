@@ -13,6 +13,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 gem 'database_cleaner', '~> 1.2.0'
 gem 'jquery-rails', '3.0.4'
 gem 'sprockets', '2.11.0'
+gem "paperclip", "~> 4.1"
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'

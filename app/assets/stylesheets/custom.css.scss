@@ -92,6 +92,15 @@ h2 {
   color: $grayLight;
 }
 
+h3 {
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #000000;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -105,7 +114,7 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: #6495ED;
-  text-transform: uppercase;
+  
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -267,10 +276,11 @@ input {
 
 .content {
   display: block;
+  color: #0000CC;
 }
 
 .timestamp {
-  color: #6495ED;
+  color: #000000;
 }
 
 aside {

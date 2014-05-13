@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140513150251) do
+ActiveRecord::Schema.define(version: 20140513185436) do
 
   create_table "advertisements", force: true do |t|
     t.text     "content"
@@ -36,6 +36,14 @@ ActiveRecord::Schema.define(version: 20140513150251) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "body"
+    t.string   "attach_file_name"
+    t.string   "attach_content_type"
+    t.integer  "attach_file_size"
+    t.datetime "attach_updated_at"
+    t.string   "pic_file_name"
+    t.string   "pic_content_type"
+    t.integer  "pic_file_size"
+    t.datetime "pic_updated_at"
   end
 
   add_index "microposts", ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"

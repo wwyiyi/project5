@@ -5,6 +5,11 @@ class Micropost < ActiveRecord::Base
   validates :content, presence: true, length: { maximum: 140 }
   validates :user_id, presence: true
   validates :body, presence: true
+  has_attached_file :pic,
+    :default_url => '/assets/na.jpg',
+    :styles => 
+          { :medium => "300x300>", :thumb => "100x100>" }
+  validates_attachment_content_type :pic, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
   # Returns microposts from the users being followed by the given user.
   def self.from_users_followed_by(user)

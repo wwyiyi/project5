@@ -1,14 +1,6 @@
-<p id="notice"><%= notice %></p>
+require 'nokogiri'
+require 'open-uri'
 
-<p>
-  <strong>Content:</strong>
-  <%= @advertisement.content %>
-</p>
+doc = Nokogiri::HTML(open('http://www.google.com'))
 
-<p>
-  <strong>User:</strong>
-  <%= @advertisement.user_id %>
-</p>
-
-<%= link_to 'Edit', edit_advertisement_path(@advertisement) %> |
-<%= link_to 'Back', advertisements_path %>
+puts doc.to_html
