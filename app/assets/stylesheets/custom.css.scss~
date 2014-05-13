@@ -89,11 +89,26 @@ h2 {
   color: $grayLight;
 }
 
+h3 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  //text-align: center;
+  font-weight: bold;
+}
+
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
+p1 {
+  font-size: 1.3em;
+  line-height: 1.7em;
+  /*margin-bottom: 10px;*/
+ /* border-bottom:thin solid $grayLight;*/
+}
 
 /* header */
 
@@ -101,14 +116,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: purple;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: purple;
     text-decoration: none;
   }
 }
@@ -226,4 +241,34 @@ aside {
   display: inline;
   padding-left: 10px;
   color: $grayLight;
+}
+
+/* sidebar */
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
 }
