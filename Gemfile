@@ -14,7 +14,7 @@ gem 'database_cleaner', '~> 1.2.0'
 gem 'jquery-rails', '3.0.4'
 gem 'sprockets', '2.11.0'
 gem "paperclip", "~> 4.1"
-gem 'factory_girl', :git => 'git://github.com/ouvrages/factory_girl.git'
+gem 'factory_girl_rails'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
