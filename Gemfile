@@ -14,6 +14,7 @@ gem 'jquery-rails', '3.0.4'
 gem 'sprockets', '2.11.0'
 gem "paperclip", "~> 4.1"
 gem 'factory_girl_rails'
+gem 'pg'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
